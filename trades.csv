@@ -1,3 +1,1 @@
 ticker,buy_strike_price,buy_real_price,sell_real_price,buy_time,sell_time,order_type
-SENSEX,73900,73913.14,74913.14,2024-05-23 15:39:00,2024-05-23 15:39:00,BuyCE
-SENSEX,75000,74913.14,70913.14,2024-05-23 15:39:00,2024-05-23 15:39:00,BuyPE
