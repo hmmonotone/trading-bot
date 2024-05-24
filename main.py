@@ -62,7 +62,7 @@ def webhook():
     ticker = data.get('ticker')
     timenow_utc = data.get('timenow')
     timenow_ist = convert_utc_to_ist(timenow_utc)
-    actual_price = data.get('strategy.order.price')
+    actual_price = int(data.get('strategy.order.price'))
     comment = data.get('strategy.order.comment')
 
     if comment in ['BuyCE', 'BuyPE']:
