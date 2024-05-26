@@ -63,15 +63,16 @@ def webhook():
     timenow_utc = data.get('timenow')
     timenow_ist = convert_utc_to_ist(timenow_utc)
     actual_price = int(data.get('strategy.order.price'))
+    action = data.get('strategy.order.action')
     comment = data.get('strategy.order.comment')
 
-    if comment in ['BuyCE', 'BuyPE']:
+    if action == "buy":
         if comment == 'BuyCE':
             price = int(int(actual_price/100)*100)
         else:
             price = int((int(actual_price/100)+1) * 100)
         log_trade(ticker, price, actual_price, timenow_ist, comment)
-    elif comment in ['SellCE', 'SellPE']:
+    else:
         update_trade(ticker, actual_price, timenow_ist)
 
     return jsonify({'status': 'success'}), 200
