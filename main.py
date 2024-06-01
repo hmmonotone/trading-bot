@@ -1,8 +1,17 @@
+import json
+import logging
 from flask import Flask, request, jsonify
 from datetime import datetime
 import pytz
 import csv
 import os
+
+# Configure logging
+logging.basicConfig(level=logging.INFO,
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                    handlers=[logging.FileHandler("app.log"),
+                              logging.StreamHandler()])
+logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 
@@ -32,6 +41,7 @@ def log_trade(order_id, ticker, buy_price, actual_price, buy_time, order_type):
     with open(CSV_FILE, 'a', newline='') as file:
         writer = csv.writer(file)
         writer.writerow([order_id, ticker, buy_price, actual_price, '', buy_time, '', order_type])
+    logger.info(f"Logged trade: Order ID: {order_id}, Ticker: {ticker}, Buy Price: {buy_price}, Actual Price: {actual_price}, Buy Time: {buy_time}, Order Type: {order_type}")
 
 
 def update_trade(order_id, sell_price, sell_time):
@@ -52,22 +62,39 @@ def update_trade(order_id, sell_price, sell_time):
         csv_writer.writerow(header)
         csv_writer.writerows(rows)
 
+    if updated:
+        logger.info(f"Updated trade: Order ID: {order_id}, Sell Price: {sell_price}, Sell Time: {sell_time}")
+    else:
+        logger.warning(f"Trade not found for update: Order ID: {order_id}")
+
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
-    data = request.json
-    print(f"Received data: {data}")
+    logger.info(f"Received request: {request.data}")
+
+    # Handle incoming JSON string
+    try:
+        json_string = request.data.decode('utf-8')
+        # Fix the JSON string
+        json_string = json_string.replace("'", '"')  # Replace single quotes with double quotes
+        json_string = json_string.replace(';', ',')  # Replace semicolons with commas
+        data = json.loads(json_string)
+    except json.JSONDecodeError as e:
+        logger.error(f"Error parsing JSON: {str(e)}")
+        return jsonify({'error': 'Invalid JSON'}), 400
+
+    logger.info(f"Received data: {data}")
 
     # Extract data from webhook
+    order_id = data.get('order_id')
     ticker = data.get('ticker')
     timenow_utc = data.get('timenow')
     timenow_ist = convert_utc_to_ist(timenow_utc)
-    order_id = data.get('order_id')
     actual_price = float(data.get('strategy.order.price'))
     action = data.get('strategy.order.action')
     comment = data.get('strategy.order.comment')
 
-    if comment == 'BuyCE' or comment == "BuyPE":
+    if action == "buy":
         if comment == 'BuyCE':
             price = int(int(actual_price / 100) * 100)
         else:
@@ -80,4 +107,4 @@ def webhook():
 
 
 if __name__ == '__main__':
-    app.run(port=80)
+    app.run(port=5000)
