@@ -94,11 +94,11 @@ def webhook():
     action = data.get('strategy.order.action')
     comment = data.get('strategy.order.comment')
 
-    if action == "buy":
-        if comment == 'BuyCE':
-            price = int(int(actual_price / 100) * 100)
-        else:
-            price = int((int(actual_price / 100) + 1) * 100)
+    if comment == 'BuyCE':
+        price = int(int(actual_price / 100) * 100)
+        log_trade(order_id, ticker, price, actual_price, timenow_ist, comment)
+    elif comment == 'BuyPE':
+        price = int((int(actual_price / 100) + 1) * 100)
         log_trade(order_id, ticker, price, actual_price, timenow_ist, comment)
     else:
         update_trade(order_id, actual_price, timenow_ist)
