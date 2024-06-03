@@ -51,7 +51,7 @@ def update_trade(ticker, order_type, sell_price, sell_time):
         reader = csv.reader(file)
         header = next(reader)
         for row in reader:
-            if row[0] == ticker and row[6] == order_type and row[3] == '' and not updated:
+            if row[0] == ticker and row[3] == '' and not updated:
                 row[3] = sell_price
                 row[5] = sell_time
                 updated = True
