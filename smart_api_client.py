@@ -64,7 +64,6 @@ class SmartApiClient:
                 "tradingsymbol": tradingsymbol,
                 "symboltoken": symboltoken,
                 "transactiontype": order_type,
-                "instrumenttype": "OPTIDX",
                 "exchange": exchange,
                 "ordertype": "LIMIT",
                 "price": price,
