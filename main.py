@@ -35,11 +35,12 @@ def place_order(strike_price, ticker, expiry, order_type, option_type):
             logger.error("Something went wrong please check")
             return
     token_detail = client.token_json_data.get(tradingsymbol)
-
+    ltp_data = client.get_ltp_data(symboltoken=token_detail.get('token'),exchange=token_detail.get("exch_seg"))
+    ltp = ltp_data.get("data").get("fetched")[0].get("ltp")
     if token_detail:
         order_id = client.place_order(order_type=order_type, symboltoken=token_detail.get('token'),
                                       tradingsymbol=tradingsymbol,
-                                      lotsize=token_detail.get('lotsize'), exchange=token_detail.get("exch_seg"))
+                                      lotsize=token_detail.get('lotsize'), exchange=token_detail.get("exch_seg"), price=ltp)
         if order_id and order_type == "BUY":
             active_trades[option_type] = tradingsymbol
     client.logout()
