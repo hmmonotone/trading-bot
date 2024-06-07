@@ -6,6 +6,8 @@ import pytz
 import csv
 import os
 
+from smart_api_client import SmartApiClient
+
 # Configure logging
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -15,19 +17,32 @@ logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 
-# Replace with your Angel One API credentials
-API_KEY = 'your_angel_one_api_key'
-CLIENT_CODE = 'your_client_code'
-AUTH_TOKEN = 'your_auth_token'
+client = SmartApiClient()
+client.fetch_token_details()
+active_trades = {"CE": "", "PE": ""}
 
-CSV_FILE = 'trades.csv'
 
-# Ensure the CSV file exists and has the correct headers
-if not os.path.isfile(CSV_FILE):
-    with open(CSV_FILE, 'w', newline='') as file:
-        writer = csv.writer(file)
-        writer.writerow(['ticker', 'buy_strike_price', 'buy_real_price', 'sell_real_price',
-                         'buy_time', 'sell_time', 'order_type'])
+def place_order(strike_price, ticker, expiry, order_type, option_type):
+    client.generate_session()
+    ticker = ticker
+    strike_price = strike_price
+    expiry = expiry
+    option_type = option_type
+    tradingsymbol = ticker + expiry + str(strike_price) + option_type
+    if order_type == "SELL":
+        tradingsymbol = active_trades[option_type]
+        if tradingsymbol == "":
+            logger.error("Something went wrong please check")
+            return
+    token_detail = client.token_json_data.get(tradingsymbol)
+
+    if token_detail:
+        order_id = client.place_order(order_type=order_type, symboltoken=token_detail.get('token'),
+                                      tradingsymbol=tradingsymbol,
+                                      lotsize=token_detail.get('lotsize'), exchange=token_detail.get("exch_seg"))
+        if order_id and order_type == "BUY":
+            active_trades[option_type] = tradingsymbol
+    client.logout()
 
 
 def convert_utc_to_ist(utc_time_str):
@@ -35,37 +50,6 @@ def convert_utc_to_ist(utc_time_str):
     utc_time = utc_time.replace(tzinfo=pytz.UTC)
     ist_time = utc_time.astimezone(pytz.timezone('Asia/Kolkata'))
     return ist_time.strftime("%Y-%m-%d %H:%M:%S")
-
-
-def log_trade(ticker, buy_price, actual_price, buy_time, order_type):
-    with open(CSV_FILE, 'a', newline='') as file:
-        writer = csv.writer(file)
-        writer.writerow([ticker, buy_price, actual_price, '', buy_time, '', order_type])
-    logger.info(f"Logged trade: Ticker: {ticker}, Buy Price: {buy_price}, Actual Price: {actual_price}, Buy Time: {buy_time}, Order Type: {order_type}")
-
-
-def update_trade(ticker, order_type, sell_price, sell_time):
-    rows = []
-    updated = False
-    with open(CSV_FILE, 'r') as file:
-        reader = csv.reader(file)
-        header = next(reader)
-        for row in reader:
-            if row[0] == ticker and row[3] == '' and not updated:
-                row[3] = sell_price
-                row[5] = sell_time
-                updated = True
-            rows.append(row)
-
-    with open(CSV_FILE, 'w', newline='') as file:
-        csv_writer = csv.writer(file)
-        csv_writer.writerow(header)
-        csv_writer.writerows(rows)
-
-    if updated:
-        logger.info(f"Updated trade: Ticker: {ticker}, Order Type: {order_type}, Sell Price: {sell_price}, Sell Time: {sell_time}")
-    else:
-        logger.warning(f"Trade not found for update: Ticker: {ticker}, Order Type: {order_type}")
 
 
 @app.route('/webhook', methods=['POST'])
@@ -94,13 +78,15 @@ def webhook():
     comment = data.get('strategy.order.comment')
 
     if comment == 'BuyCE':
-        price = int(int(actual_price / 100) * 100)
-        log_trade(ticker, price, actual_price, timenow_ist, comment)
+        strike_price = int(int(actual_price / 100) * 100)
+        place_order(strike_price=strike_price, ticker=ticker, expiry="24607", order_type="BUY", option_type="CE")
     elif comment == 'BuyPE':
-        price = int((int(actual_price / 100) + 1) * 100)
-        log_trade(ticker, price, actual_price, timenow_ist, comment)
+        strike_price = int((int(actual_price / 100) + 1) * 100)
+        place_order(strike_price=strike_price, ticker=ticker, expiry="24607", order_type="BUY", option_type="PE")
+    elif "BuyPE" in comment:
+        place_order(strike_price=0, ticker=ticker, expiry="24607", order_type="SELL", option_type="PE")
     else:
-        update_trade(ticker, comment, actual_price, timenow_ist)
+        place_order(strike_price=0, ticker=ticker, expiry="24607", order_type="SELL", option_type="CE")
 
     return jsonify({'status': 'success'}), 200
 
