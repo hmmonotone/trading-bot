@@ -57,7 +57,7 @@ class SmartApiClient:
             logger.exception(f"Fetching token data failed: {e}")
             return None
 
-    def place_order(self, order_type, tradingsymbol, symboltoken, lotsize, exchange, price):
+    def place_order(self, order_type, tradingsymbol, symboltoken, lotsize, exchange, price, stoploss):
         try:
             orderparams = {
                 "variety": "ROBO",
@@ -68,7 +68,7 @@ class SmartApiClient:
                 "exchange": exchange,
                 "ordertype": "LIMIT",
                 "price": price,
-                "stoploss": str(int(price)*0.1),
+                "stoploss": stoploss,
                 "trailingStopLoss": 5,
                 "producttype": "BO",
                 "duration": "DAY",

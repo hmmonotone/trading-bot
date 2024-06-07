@@ -37,10 +37,17 @@ def place_order(strike_price, ticker, expiry, order_type, option_type):
     token_detail = client.token_json_data.get(tradingsymbol)
     ltp_data = client.get_ltp_data(symboltoken=token_detail.get('token'),exchange=token_detail.get("exch_seg"))
     ltp = ltp_data.get("data").get("fetched")[0].get("ltp")
+    stoploss = str(int(ltp)*0.1)
+    if order_type == "SELL":
+        ltp = 0
+        stoploss = 0
     if token_detail:
-        order_id = client.place_order(order_type=order_type, symboltoken=token_detail.get('token'),
+        order_id = client.place_order(order_type=order_type,
+                                      symboltoken=token_detail.get('token'),
                                       tradingsymbol=tradingsymbol,
-                                      lotsize=token_detail.get('lotsize'), exchange=token_detail.get("exch_seg"), price=ltp)
+                                      lotsize=token_detail.get('lotsize'),
+                                      exchange=token_detail.get("exch_seg"),
+                                      price=ltp, stoploss=stoploss)
         if order_id and order_type == "BUY":
             active_trades[option_type] = tradingsymbol
     client.logout()
