@@ -57,19 +57,18 @@ class SmartApiClient:
             logger.exception(f"Fetching token data failed: {e}")
             return None
 
-    def place_order(self, order_type, tradingsymbol, symboltoken, lotsize, exchange, price, stoploss):
+    def place_order(self, order_type, tradingsymbol, symboltoken, lotsize, exchange):
         try:
             orderparams = {
-                "variety": "ROBO",
+                "variety": "NORMAL",
                 "tradingsymbol": tradingsymbol,
                 "symboltoken": symboltoken,
                 "transactiontype": order_type,
+                "instrumenttype": "OPTIDX",
                 "exchange": exchange,
-                "ordertype": "LIMIT",
-                "price": price,
-                "stoploss": stoploss,
-                "trailingStopLoss": 5,
-                "producttype": "BO",
+                "ordertype": "MARKET",
+                "price": 0,
+                "producttype": "CARRYFORWARD",
                 "duration": "DAY",
                 "quantity": lotsize,
             }
@@ -80,16 +79,6 @@ class SmartApiClient:
         except Exception as e:
             logger.exception(f"Order placement failed: {e}")
             return None
-    
-    def get_ltp_data(self, symboltoken, exchange):
-        try:
-            live_market_data = self.smartApi.getMarketData(mode="LTP", exchangeTokens={exchange: [symboltoken]})
-            logger.info(f"Live_Market_Data: {live_market_data}")
-            return live_market_data
-        except Exception as e:
-            logger.exception(f"Live_Market_Data fetch failed: {e}")
-            return None
-        
     def logout(self):
         try:
             logout = self.smartApi.terminateSession(self.client_id)
