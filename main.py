@@ -79,14 +79,14 @@ def webhook():
 
     if comment == 'BuyCE':
         strike_price = int(int(actual_price / 100) * 100)
-        place_order(strike_price=strike_price, ticker=ticker, expiry="24607", order_type="BUY", option_type="CE")
+        place_order(strike_price=strike_price, ticker=ticker, expiry="24614", order_type="BUY", option_type="CE")
     elif comment == 'BuyPE':
         strike_price = int((int(actual_price / 100) + 1) * 100)
-        place_order(strike_price=strike_price, ticker=ticker, expiry="24607", order_type="BUY", option_type="PE")
+        place_order(strike_price=strike_price, ticker=ticker, expiry="24614", order_type="BUY", option_type="PE")
     elif "BuyPE" in comment:
-        place_order(strike_price=0, ticker=ticker, expiry="24607", order_type="SELL", option_type="PE")
+        place_order(strike_price=0, ticker=ticker, expiry="24614", order_type="SELL", option_type="PE")
     else:
-        place_order(strike_price=0, ticker=ticker, expiry="24607", order_type="SELL", option_type="CE")
+        place_order(strike_price=0, ticker=ticker, expiry="24614", order_type="SELL", option_type="CE")
 
     return jsonify({'status': 'success'}), 200
 
