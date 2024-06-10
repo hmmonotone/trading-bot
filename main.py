@@ -28,14 +28,27 @@ def place_order(strike_price, ticker, expiry, order_type, option_type):
     strike_price = strike_price
     expiry = expiry
     option_type = option_type
-    tradingsymbol = ticker + expiry + str(strike_price) + option_type
-    if order_type == "SELL":
-        tradingsymbol = active_trades[option_type]
-        if tradingsymbol == "":
-            logger.error("Something went wrong please check")
-            return
-    token_detail = client.token_json_data.get(tradingsymbol)
+    if option_type == "CE":
+        tradingsymbol = active_trades["PE"]
+        token_detail = client.token_json_data.get(tradingsymbol)
+        if tradingsymbol != "":
+            order_id = client.place_order(order_type="SELL",
+                                          symboltoken=token_detail.get('token'),
+                                          tradingsymbol=tradingsymbol,
+                                          lotsize=token_detail.get('lotsize'),
+                                          exchange=token_detail.get('exch_seg'))
+    else:
+        tradingsymbol = active_trades["CE"]
+        token_detail = client.token_json_data.get(tradingsymbol)
+        if tradingsymbol != "":
+            order_id = client.place_order(order_type="SELL",
+                                          symboltoken=token_detail.get('token'),
+                                          tradingsymbol=tradingsymbol,
+                                          lotsize=token_detail.get('lotsize'),
+                                          exchange=token_detail.get('exch_seg'))
 
+    tradingsymbol = ticker + expiry + str(strike_price) + option_type
+    token_detail = client.token_json_data.get(tradingsymbol)
     if token_detail:
         order_id = client.place_order(order_type=order_type, symboltoken=token_detail.get('token'),
                                       tradingsymbol=tradingsymbol,
@@ -83,10 +96,6 @@ def webhook():
     elif comment == 'BuyPE':
         strike_price = int((int(actual_price / 100) + 1) * 100)
         place_order(strike_price=strike_price, ticker=ticker, expiry="24614", order_type="BUY", option_type="PE")
-    elif "BuyPE" in comment:
-        place_order(strike_price=0, ticker=ticker, expiry="24614", order_type="SELL", option_type="PE")
-    else:
-        place_order(strike_price=0, ticker=ticker, expiry="24614", order_type="SELL", option_type="CE")
 
     return jsonify({'status': 'success'}), 200
 
