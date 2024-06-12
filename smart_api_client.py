@@ -7,11 +7,11 @@ from logzero import logger
 
 class SmartApiClient:
     def __init__(self):
-        self.api_key = os.getenv('API_KEY')
-        self.username = os.getenv('USERNAME')
-        self.password = os.getenv('PASSWORD')
-        self.totp_token = os.getenv('TOTP_TOKEN')
-        self.client_id = os.getenv('CLIENT_ID')
+        self.api_key = "u3deAqBj"
+        self.username = "H59351660"
+        self.password = "1540"
+        self.totp_token = "STBA6P3DSINNZDH2FNDSLCHTW4"
+        self.client_id = "H59351660"
 
         if not all([self.api_key, self.username, self.password, self.totp_token, self.client_id]):
             raise ValueError("Environment variables not set properly.")
