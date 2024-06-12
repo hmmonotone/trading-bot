@@ -72,13 +72,14 @@ class SmartApiClient:
                 "duration": "DAY",
                 "quantity": lotsize,
             }
-            print(orderparams)
+            logger.info(f"orderparams: {orderparams}")
             orderId = self.smartApi.placeOrder(orderparams)
             logger.info(f"OrderId: {orderId}")
             return orderId
         except Exception as e:
             logger.exception(f"Order placement failed: {e}")
             return None
+
     def logout(self):
         try:
             logout = self.smartApi.terminateSession(self.client_id)
