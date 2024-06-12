@@ -30,6 +30,7 @@ def place_order(strike_price, ticker, expiry, order_type, option_type):
     option_type = option_type
     if option_type == "CE":
         tradingsymbol = active_trades["PE"]
+        logger.info(f"tradingsymbol: {tradingsymbol}")
         token_detail = client.token_json_data.get(tradingsymbol)
         if tradingsymbol != "":
             order_id = client.place_order(order_type="SELL",
@@ -39,6 +40,7 @@ def place_order(strike_price, ticker, expiry, order_type, option_type):
                                           exchange=token_detail.get('exch_seg'))
     else:
         tradingsymbol = active_trades["CE"]
+        logger.info(f"tradingsymbol: {tradingsymbol}")
         token_detail = client.token_json_data.get(tradingsymbol)
         if tradingsymbol != "":
             order_id = client.place_order(order_type="SELL",
